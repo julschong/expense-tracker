@@ -54,3 +54,7 @@
 .react-date-picker__inputGroup input {
     padding: 5px;
 }
+
+.react-calendar {
+    height: 19em;
+}
