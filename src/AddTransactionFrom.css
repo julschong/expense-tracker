@@ -1,0 +1,29 @@
+.add-transaction-form {
+    flex-direction: column;
+}
+
+.form-field {
+    width: 100%;
+}
+
+.form-field * {
+    margin-block: 10px;
+}
+
+.add-transaction-form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+.add-transaction-form .submit {
+    background-color: hsl(250, 100%, 77%);
+    color: #fff;
+    border: 0;
+    padding: 15px;
+    box-shadow: 2px 2px 1px rgba(157, 138, 255, 0.712);
+}
+
+.submit:hover {
+    cursor: pointer;
+}

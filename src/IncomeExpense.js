@@ -3,9 +3,10 @@ import './IncomeExpense.css';
 
 const IncomeExpense = () => {
     return (
-        <section className="py-10 container showcase flex ">
-            <div>
+        <section className="py-10 container showcase flex">
+            <div className="income-box">
                 <h3>INCOME</h3>
+
                 <h3 className="income">$100</h3>
             </div>
             <div>

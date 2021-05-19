@@ -1,20 +1,25 @@
 import React from 'react';
+import './AddTransactionFrom.css';
 
 const AddTransactionForm = () => {
     return (
-        <section className="py-10">
-            <h2>Add new transaction</h2>
-            <form>
-                <div>
-                    <span>Text</span>
-                    <input type="text"></input>
+        <section className=" container py-10">
+            <h2 className="secondary-title">Add new transaction</h2>
+            <form className="add-transaction-form flex">
+                <div className="form-field">
+                    <span>Title</span>
+                    <input type="text" placeholder="Enter text..."></input>
                 </div>
-                <div>
+                <div className="form-field">
                     <span>Amount (negative - expense, positive - income)</span>
-                    <input type="number"></input>
+                    <input type="number" placeholder="Enter amount..."></input>
                 </div>
-                <div>
-                    <input type="submit" value="Add transaction"></input>
+                <div className="form-field">
+                    <input
+                        className="submit"
+                        type="submit"
+                        value="Add transaction"
+                    ></input>
                 </div>
             </form>
         </section>

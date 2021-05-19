@@ -1,3 +1,7 @@
 .balance {
     padding: 10px;
 }
+
+.balance p {
+    font-size: 2em;
+}

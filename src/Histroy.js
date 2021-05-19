@@ -1,22 +1,16 @@
 import React from 'react';
+import './History.css';
+import Transaction from './Transaction';
 
 const Histroy = () => {
     return (
         <section className="py-10 container history">
-            <h2>History</h2>
+            <h2 className="secondary-title">History</h2>
             <ul>
-                <li className="flex">
-                    <p>name</p>
-                    <p>$$$$</p>
-                </li>
-                <li className="flex">
-                    <p>name</p>
-                    <p>$$$$</p>
-                </li>
-                <li className="flex">
-                    <p>name</p>
-                    <p>$$$$</p>
-                </li>
+                <Transaction />
+                <Transaction />
+                <Transaction />
+                <Transaction />
             </ul>
         </section>
     );
