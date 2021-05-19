@@ -1,0 +1,7 @@
+.income {
+    color: var(--positive-color);
+}
+
+.expense {
+    color: var(--negative-color);
+}
