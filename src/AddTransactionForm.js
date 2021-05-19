@@ -35,7 +35,7 @@ const AddTransactionForm = ({ transactions, setTransactions }) => {
         localStorage.setItem('transactions', JSON.stringify(newTransaction));
         setTitle('');
         setAmount('');
-        onChange(new Date());
+        onChange('');
         setAmountError('OK');
         setTitleError('OK');
         setDateError('OK');
