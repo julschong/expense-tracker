@@ -35,6 +35,8 @@
     border: 0;
     background-color: red;
     cursor: pointer;
+    color: white;
+    font-weight: bolder;
 }
 
 .m-fadeOut {
