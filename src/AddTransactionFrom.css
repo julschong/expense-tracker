@@ -6,14 +6,15 @@
     width: 100%;
 }
 
-.form-field * {
-    margin-top: 10px;
-}
-
-.add-transaction-form input {
+.field-input {
     display: block;
     width: 100%;
     padding: 10px;
+    border: 1px solid hsl(0, 0%, 50%, 0.6);
+}
+
+.react-date-picker__wrapper {
+    border: 1px solid hsl(0, 0%, 50%, 0.6);
 }
 
 .add-transaction-form .submit {
@@ -37,4 +38,18 @@
     padding: 0;
     margin-bottom: 10px;
     color: red;
+}
+
+.react-date-picker {
+    display: block;
+}
+
+.react-date-picker__inputGroup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.react-date-picker__inputGroup input {
+    padding: 5px;
 }

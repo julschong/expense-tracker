@@ -1,5 +1,6 @@
 import React from 'react';
 import { useHover } from './hooks/useHover';
+import { formatNumbers } from './utils/helper';
 
 const Transaction = ({ transactions, index, setTransactions }) => {
     const [hoverRef, isHovered] = useHover();
@@ -30,18 +31,26 @@ const Transaction = ({ transactions, index, setTransactions }) => {
     return (
         <li ref={hoverRef} className={`transaction flex ${color}`}>
             <div>
-                <p>{transaction.title}</p>
-                <p className="small">May 18th, 2021</p>
+                {transaction.title.length < 15 ? (
+                    <p>{transaction.title}</p>
+                ) : (
+                    <p>{`${transaction.title.substring(0, 15)}...`}</p>
+                )}
+                <p className="small">{formatDate(transaction.date)}</p>
             </div>
             <p>
                 {sign}
-                {transaction.amount.toFixed(2)}
+                {formatNumbers(transaction.amount)}
             </p>
             <button onClick={deleteButtonClicked} className={`del-btn ${vis}`}>
                 X
             </button>
         </li>
     );
+};
+
+const formatDate = (date) => {
+    return new Date(date).toDateString();
 };
 
 export default Transaction;
